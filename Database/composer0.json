@@ -1,0 +1,29 @@
+{
+    "name": "shineyork\/laravel-extend",
+    "description": "Package description here.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ShineYork",
+            "email": "shineyork@sixstaredu.com"
+        }
+    ],
+    "replace":{
+        "shineyork/laravel-extend-artisan":"self.version",
+        "shineyork/laravel-extend-database":"self.version"
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ShineYork\\LaravelExtend\\": ""
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "ShineYork\\LaravelExtend\\Artisan\\ArtisanServiceProvider",
+                "ShineYork\\LaravelExtend\\Database\\Providers\\SDatabaseServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "hylm/laravel-swoole",
+    "description": "swoole的加速扩展包",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hylm",
+            "email": "85848166@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hylm\\LaravelSwoole\\Swoole": ""
+        }
+    }
+}

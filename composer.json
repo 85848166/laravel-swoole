@@ -1,0 +1,28 @@
+{
+    "name": "hylm/laravel-swoole",
+    "description": "swoole",
+    "authors": [
+        {
+            "name": "hylm",
+            "email": "85848166@qq.com"
+        }
+    ],
+    "replace":{
+        "shineyork/laravel-swoole-artisan":"self.version",
+        "shineyork/laravel-extend-database":"self.version"
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ShineYork\\LaravelExtend\\": ""
+        }
+    },
+    "extra":{
+        "laravel":{
+            "providers":[
+                "ShineYork\\LaravelExtend\\Artisan\\ArtisanServiceProvider",
+                "ShineYork\\LaravelExtend\\Database\\Providers\\SDatabaseServiceProvider"
+            ]
+        }
+    }
+}
