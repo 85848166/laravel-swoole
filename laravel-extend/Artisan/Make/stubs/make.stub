@@ -1,0 +1,15 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Console\GeneratorCommand as Commad;
+
+class DummyClass extends Commad
+{
+    use GeneratorCommand;
+
+    protected $signature = 'shop-make:class {name}';
+
+    protected $namespaceSuffix = "";
+
+}
